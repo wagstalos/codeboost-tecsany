@@ -31,3 +31,16 @@ swiper.on('slideChange', function() {
     backgroundMain.style.background = 'linear-gradient(360deg, #F5F9F3 0%, rgba(245, 249, 243, 0) 101.57%)';
   }
 });
+
+let nextButton = document.getElementById('swiper-button-next');
+let prevButton = document.getElementById('swiper-button-prev');
+
+nextButton.addEventListener('click', function() {
+  // Avança para o próximo slide quando o botão é clicado
+  swiper.slideNext();
+});
+
+prevButton.addEventListener('click', function() {
+  // Avança para o próximo slide quando o botão é clicado
+  swiper.slidePrev();
+});
