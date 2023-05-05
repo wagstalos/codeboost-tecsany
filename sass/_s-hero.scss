@@ -152,6 +152,12 @@
         }
         .row {
             flex-direction: column;
+
+            .col-text{
+                ul{
+                    justify-content: center;
+                }
+            }
         }
     }
 }
