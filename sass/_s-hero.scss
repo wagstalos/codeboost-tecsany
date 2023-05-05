@@ -1,0 +1,135 @@
+.s-hero {
+    h1 {
+        font-size: 7rem;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.8rem;
+
+        line-height: 150%;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+
+        margin-top: 117px;
+    }
+
+    .color-green {
+        color: $green-light;
+    }
+
+    .color-pink {
+        color: $pink;
+    }
+    
+    p {
+        font-family: "Epilogue";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $gray;
+        max-width: 413px;
+
+        margin-top: 24px;
+        margin-bottom: 33px;
+    }
+
+    .row {
+        display: flex;
+
+        .col-text {
+            max-width: 624px;
+
+            .price {
+                font-weight: 700;
+                font-size: 25.5361px;
+                line-height: 120%;
+            }
+
+            .price {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 120%;
+
+                display: flex;
+                align-items: center;
+                &::after {
+                    content: "R$5,999";
+                    margin-left: 8px;
+                    font-weight: 700;
+                    font-size: 25.5361px;
+                    line-height: 120%;
+                }
+            }
+
+            button {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 120%;
+
+                margin-top: 31px;
+                display: flex;
+                align-items: center;
+                &::after {
+                    content: url(./../img/next.svg);
+                    margin-right: 8px;
+                    margin-top: 4px;
+
+                    margin-left: 12px;
+                }
+            }
+        }
+
+        .col-img {
+            position: relative;
+
+            .elipse-green {
+                position: absolute;
+                top: 0;
+                left: 150px;
+                z-index: 0;
+            }
+
+            .patinete-green {
+                position: relative;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+
+@include responsive(600px){
+    .s-hero{
+        h1{
+            font-size: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 16px;
+        }
+
+        h2{
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        span{
+           justify-content: center;
+        }
+
+        button{
+            margin: 20px auto;
+        }
+        .row {
+            flex-direction:column;
+        }
+    } 
+}

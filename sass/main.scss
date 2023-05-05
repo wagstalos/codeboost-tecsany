@@ -1,0 +1,23 @@
+@import '_reset.scss';
+@import '_mixins.scss';
+@import '_variables.scss';
+@import '_animations.scss';
+@import '_header.scss';
+@import '_s-hero.scss';
+@import '_s-banner.scss';
+
+
+.container {
+    width: 100%;
+    max-width: 124.6rem;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.bg-all{
+    position: absolute;
+    width: 100%;
+    height: 1651px;
+    left: 0px;
+    top: 100px;
+}

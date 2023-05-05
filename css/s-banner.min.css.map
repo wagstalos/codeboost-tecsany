@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/s-banner.scss"
+    ],
+    "names": [],
+    "file": "s-banner.min.css"
+}

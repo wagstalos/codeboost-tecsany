@@ -1,0 +1,91 @@
+.s-banner{
+    margin-top: 69px;
+    position: relative;
+    .container{
+        border-radius: 40px;
+        height: 657px;
+
+        position: relative;
+    }
+
+    .bg-green{
+        background-color: #E8F4ED;
+    }
+
+    .bg-pink{
+        background-color: #FCE2E5;
+    }
+
+    h3{
+        font-size: 1.8rem;
+        text-align: center;
+
+        padding-top: 72px;
+    }
+
+    h2{
+        font-size: 6.2rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 40px;
+        li{
+            margin-right: 16px;
+            font-weight: 600;
+            font-size: 16.1333px;
+            line-height: 120%;
+
+            &::before{
+                content: url(./../img/check.svg);
+                margin-right: 8px;
+                margin-top: 4px;
+
+                margin-left: 12px;
+            }
+        }
+    }
+    
+    img{
+        position: absolute;
+        bottom: -190px;
+        left: 50%;
+        transform: translateX(-50%);
+        // width: 100%;
+    }
+}
+
+@include responsive(600px){
+    .s-banner{
+        .container{
+            height: 557px;
+        }
+        h2{
+            font-size: 48px;
+            line-height: 50px;
+        }
+
+        ul{
+            flex-direction: column;
+            margin-top: 20px;
+
+            li{
+                margin-bottom: 16px;
+            }
+        }
+
+        img{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            // width: 100%;
+        }
+    }
+}

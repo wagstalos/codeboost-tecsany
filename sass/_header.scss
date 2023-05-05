@@ -1,0 +1,81 @@
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    
+    .container{
+        @include flex (row, center, space-between)
+    }
+    .itens{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 76%;
+    }
+    nav{
+        ul{
+            display: flex;
+            a{
+                color: $black;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+            li{
+                margin-right: 56px;
+            }
+        }
+    }
+    button{
+        color: $black;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        &:before{
+            content:  url('./../img/user.svg');
+            margin-right: 8px;
+            margin-top: 4px;
+        }
+    }
+    .icon-menu-mobile{
+        display: none;
+        .menu-mobile{
+            flex-direction: column;
+            position: absolute;
+            top: 12%;
+            right: 12px;
+            background-color: #dfdfdf;
+            color: gray;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+            z-index: 10;
+        }
+        .active{
+            display: block;
+            animation-name: fadein;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+    }
+    
+}
+
+@include responsive(800px){
+    header{
+        .itens{
+            display: none;
+        }
+        .icon-menu-mobile{
+            display: block;
+            cursor: pointer;
+        }
+
+    }
+ }
+ 
+ 
