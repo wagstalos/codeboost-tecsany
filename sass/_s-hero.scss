@@ -15,14 +15,6 @@
         margin-top: 117px;
     }
 
-    .color-green {
-        color: $green-light;
-    }
-
-    .color-pink {
-        color: $pink;
-    }
-
     p {
         font-family: "Epilogue";
         font-style: normal;
@@ -34,6 +26,14 @@
 
         margin-top: 24px;
         margin-bottom: 33px;
+    }
+
+    .color-green {
+        color: $green-light;
+    }
+
+    .color-pink {
+        color: $pink;
     }
 
     .row {
@@ -123,9 +123,10 @@
             }
         }
     }
+
 }
 
-@include responsive(600px) {
+@include responsive(800px) {
     .s-hero {
         h1 {
             font-size: 50px;
@@ -140,6 +141,7 @@
         }
 
         p {
+            max-width: 100%;
             text-align: center;
         }
 
@@ -154,6 +156,7 @@
             flex-direction: column;
 
             .col-text{
+                max-width: 100%;
                 ul{
                     justify-content: center;
                 }
