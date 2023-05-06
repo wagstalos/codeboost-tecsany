@@ -2,7 +2,7 @@
 codeboost-tecsany
 
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Gotasks" />
+  <img src="./.github/app.gif" alt="Tecsany" />
 
   &#xa0;
 
@@ -11,7 +11,7 @@ codeboost-tecsany
 
 Your site is live at https://wagstalos.github.io/codeboost-tecsany/
 
-<h1 align="center">Gotasks</h1>
+<h1 align="center">Tecsany</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/wagstalos/gotasks?color=56BEB8">
@@ -51,13 +51,13 @@ Your site is live at https://wagstalos.github.io/codeboost-tecsany/
 
 ## :dart: About ##
 
-To do in js
+Landing Page
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\ Slider
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: LP;
+:heavy_check_mark: Slider;
+:heavy_check_mark: animation;
 
 ## :rocket: Technologies ##
 
@@ -69,7 +69,7 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) 
 
 ## :checkered_flag: Starting ##
 
