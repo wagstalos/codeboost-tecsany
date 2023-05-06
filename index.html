@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Epilogue&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -89,7 +89,8 @@
                                 </ul>
                             </div>
 
-                            <div class="col-img">
+                            <div class="col-img" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                data-aos-offset="500" data-aos-duration="500">
                                 <img class="elipse-green" src="img/elipse-verde.png" alt="patinete">
                                 <img class="patinete-green" src="img/patinete-verde.png" alt="patinete">
 
@@ -110,7 +111,7 @@
                         </ul>
                         <img class="s-banner__handlebar" src="img/banner.png" alt="handlebar">
                     </div>
-   
+
                 </section>
 
             </div>
@@ -170,6 +171,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
