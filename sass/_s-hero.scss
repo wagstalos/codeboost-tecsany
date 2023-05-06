@@ -96,6 +96,7 @@
                 margin-top: 31px;
                 display: flex;
                 align-items: center;
+
                 &::after {
                     content: url(./../img/next.svg);
                     margin-right: 8px;
@@ -151,6 +152,15 @@
 
         button {
             margin: 20px auto;
+            padding-left: 8px;
+            background-color: rgb(234, 234, 234);
+            border-radius: 20px;
+
+            transition: background-color 0.5s ease;
+
+            &:hover{
+                background-color: rgb(212, 212, 212);
+            }
         }
         .row {
             flex-direction: column;
