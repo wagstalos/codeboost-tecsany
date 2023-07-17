@@ -21,7 +21,7 @@ btn.addEventListener("click", () => {
 
 //Swiper
 const swiper = new Swiper(".swiper", {
-  // effect: "flip",
+  effect: "flip",
   speed: 400,
   spaceBetween: 100,
   pagination: {
